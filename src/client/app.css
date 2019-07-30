@@ -1,0 +1,266 @@
+body, html{
+  font-family: 'Arimo', sans-serif;
+  color: #333333;
+  background: rgb(255, 255, 255);
+}
+/* GLOBAL STYLES */
+.container-fluid{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.row, .col-6, .col-4{
+  padding-left: 0%;
+  padding-right: 0%;  
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.fa-red{
+  color: #99021C;
+}
+.nav-top{
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+}
+.section-title{
+  font-family: 'Muli', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -.9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+.trailer-wrap{
+  background: #ffffff;
+}
+.trailer-row td{
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.trailer-row td:first-of-type{
+  padding-left: 10px;
+}
+.trailer-row{
+  border-bottom: 1px solid #d4d4d4;
+}
+.status-toggler{
+  min-width: 80px;
+}
+.card-wrap{
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px rgb(190, 197, 211);
+  padding-top: 5px;
+  background: #ffffff;
+}
+.card-wrap .table-hover{
+  border: none;
+}
+.card-title{
+  font-size: 25px;
+  font-weight: 500;
+}
+.custom-row{
+  border-top: 1px solid #d4d4d4;
+  transition: 200ms;
+}
+.custom-row:hover{
+  font-weight: 700;
+  box-shadow: 0px 0px 20px 1px #e9e9e9;
+}
+.chart-wrap{
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px rgb(190, 197, 211);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+}
+.nav-link{
+  color: #ffffff;
+  transition: 200ms;
+}
+.dropdown-item .nav-link{
+  color: #333333;
+}
+.nav-hover{
+  border-bottom: 5px solid  rgba(31, 31, 31, 0.9);
+  transition: 200ms;
+}
+.nav-hover:hover{
+  border-bottom: 5px solid #d4d4d4;
+  cursor: pointer;
+}
+.nav-hover a{
+  text-decoration: none;
+}
+
+/* Toggle Button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(51, 129, 81);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Toggle Button end... */
+
+/* Contact List */
+.indicator{
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.contact-div{
+  border: 1px solid #e2e2e2;
+  padding: 5px;
+  background: #fdfdfd;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.contact-div p{
+  margin: 0;
+}
+
+/* Editor */
+.edit-table td{
+  padding-right: 40px;
+}
+#contact-form select.form-control:not([size]):not([multiple]) {
+    height: calc(3.5rem + 2px);
+}
+.action-btn{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 5px;
+}
+.action-btn .fa{
+  font-size: .8em;
+}
+.to-edit-table td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.trailer-view-container{
+  background-color: #161616;
+  background-image: linear-gradient(rgba(133, 133, 133, 0.6), rgb(17, 17, 17));
+}
+.full-h{
+  height: 100vh;
+}
+.form-wrap{
+  background: rgba(26, 26, 26, .3);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0px 0px 3px 3px;
+  color: #ffffff;
+}
+table{
+  border-radius: 3px;
+}
+.form-title{
+  background: rgba(26, 26, 26, .3);
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 3px 3px 0px 0px;
+  text-align: center;
+}
+#title-value{
+  font-size: 2em;
+}
+hr{
+  background: #bbbbbb;
+}
+.shadow-div{
+  box-shadow: 0px 0px 30px 1px rgb(2, 2, 2);
+  border-radius: 3px 3px 0px 0px;
+}
+.dark-theme{
+  background: rgb(53, 53, 53);
+  color: #b9b9b9;
+}
+table tbody tr{
+  border-top: 1px solid #4b4b4b;
+}
+.trailer-row{
+  transition: 200ms;
+}
+.trailer-row:hover{
+  background: rgb(70, 70, 70);
+}
+.selected-row{
+  background: rgb(97, 97, 97);
+}
+.btn-empty{
+  background: #28a745;
+}
+.btn-full{
+  background: #c82333;
+}
+.btn-transit{
+  background: #e0a800;
+}
+.form-control:active{
+  outline: none;
+  border: none;
+}
+*/
